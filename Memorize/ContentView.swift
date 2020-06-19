@@ -9,16 +9,15 @@
 import SwiftUI
 
 struct ContentView: View {
-
     var body: some View {
-        return HStack {
+        HStack {
             ForEach(0..<4) {index in
                 CardView(isFaceUp: true)
             }
         }
-        .padding()
-        .foregroundColor(Color.orange)
-        .font(Font.largeTitle)
+            .padding()
+            .foregroundColor(Color.orange)
+            .font(Font.largeTitle)
     }
 }
 
