@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-//Keywords is Magenta, Indentifiers is Green and Swift Indentifiers is Purple.
+//Keywords is Magenta, Indentifiers is Green and Swift Indentifiers is Purple
 //View is a rectangle area of the screen.
 
 /// The main view of the application
