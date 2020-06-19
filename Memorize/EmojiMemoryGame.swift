@@ -11,8 +11,9 @@ import Foundation
 class EmojiMemoryGame {
     private var model: MemoryGame<String> = EmojiMemoryGame.createMemoryGame()
     
-    let emojis: Array<String> = ["👻", "🎃"]
+    
     static func createMemoryGame() -> MemoryGame<String> {
+        let emojis: Array<String> = ["👻", "🎃"]
         return MemoryGame<String>(numberOfPairOfCards: 2) { pairIndex in
             return emojis[pairIndex]
         }
