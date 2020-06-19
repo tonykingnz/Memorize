@@ -17,11 +17,7 @@ struct ContentView: View {
     var body: some View {
         return HStack {
             ForEach(0..<4) {index in
-                ZStack(content: {
-                    RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
-                    RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3.0)//Return a view with roudend rectangle. The .stroke() is a function, and even, can have arguments.
-                    Text("👻")//Return a view with the text
-                })
+                CardView(isFaceUp: true)
             } //If the last argument has curly braches, it's label can be removed
         }
             .padding()
@@ -30,7 +26,22 @@ struct ContentView: View {
     }
 }
 
-
+struct CardView: View {
+    var isFaceUp: Bool
+    
+    var body: some View {
+        ZStack{
+            if isFaceUp {
+                RoundedRectangle(cornerRadius: 10.0).fill(Color.white)
+                RoundedRectangle(cornerRadius: 10.0).stroke(lineWidth: 3.0)//Return a view with roudend rectangle. The .stroke() is a function, and even, can have arguments.
+                Text("👻")//Return a view with the text
+            }
+            else {
+                RoundedRectangle(cornerRadius: 10.0).fill()
+            }
+        }
+    }
+}
 
 
 
