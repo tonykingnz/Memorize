@@ -12,8 +12,10 @@ import SwiftUI
 
 /// The main view of the application
 struct ContentView: View {
+    /// Create a propriertie called boby, that is the second view, and recive everything that behaves like a view.
     var body: some View {
-        /*return*/ Text("Hello 😀, World!")
+        return RoundedRectangle(cornerRadius: 10.0)
+        ///*return*/ Text("Hello 😀, World!")
     }
 }
 
