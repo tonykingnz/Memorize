@@ -2,13 +2,14 @@
 //  ContentView.swift
 //  Memorize
 //
-//  Created by José Antônio Maria de Rezende Silva on 6/6/20.
+//  Created by José Antônio Maria de Rezende Silva on 6/6/20..
 //  Copyright © 2020 José Antônio Maria de Rezende Silva. All rights reserved.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+
     var viewModel: EmojiMemoryGame
     var body: some View {
         HStack {
@@ -21,6 +22,7 @@ struct ContentView: View {
             .padding()
             .foregroundColor(Color.orange)
             .font(Font.largeTitle)
+
     }
 }
 
@@ -41,9 +43,6 @@ struct CardView: View {
         }
     }
 }
-
-
-
 
 
 
